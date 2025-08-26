@@ -35,6 +35,7 @@ function displayUserOnScreen(user) {
     axios.delete(`${API_URL}/${user._id}`)
       .then(() => userList.removeChild(li))
       .catch((err) => console.error(err));
+      console.log("deleteBtn");
   };
 
   
